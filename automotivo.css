@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topo {
+    background-color: #292929;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    color: #FFB400;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #FFB400;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 65px 60px;
+    background-color: #121212;
+}
+
+.texto-inicio {
+    width: 50%;
+}
+
+.texto-inicio h3,
+.texto-sobre h3,
+.titulo-secao p {
+    color: #FFB400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.texto-inicio h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.texto-inicio h1 span {
+    color: #FFB400;
+}
+
+.texto-inicio p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #FFB400;
+    color: #121212;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}
+
+.imagem-inicio {
+    width: 50%;
+}
+
+.imagem-inicio img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.servicos {
+    padding: 60px;
+    background-color: #292929;
+}
+
+.titulo-secao {
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.lista-servicos {
+    display: flex;
+    gap: 20px;
+}
+
+.card-servico {
+    width: 33.33%;
+    background-color: #3d391b;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-servico h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-servico p {
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.card-servico a {
+    color: #FFB400;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 65px 60px;
+    background-color: #121212;
+}
+
+.imagem-sobre {
+    width: 50%;
+}
+
+.imagem-sobre img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-sobre {
+    width: 50%;
+}
+
+.texto-sobre h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.texto-sobre p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.texto-sobre .botao {
+    margin-top: 10px;
+}
+
+.diferenciais {
+    background-color: #121212;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.titulo-amarelo {
+    color: #FFB400;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.diferenciais h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.lista-diferenciais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-diferencial {
+    background-color: #292929;
+    width: 250px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card-diferencial h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.card-diferencial p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.contato {
+    padding: 70px 60px;
+    background-color: #292929;
+}
+
+.texto-contato {
+    margin-bottom: 25px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #292929;
+}
+
+.rodape h3 {
+    color: #FFB400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Ajuste simples para telas menores */
+@media (max-width: 800px) {
+
+    .navegacao {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .inicio,
+    .sobre {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .texto-inicio,
+    .imagem-inicio,
+    .imagem-sobre,
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .texto-inicio h1 {
+        font-size: 34px;
+    }
+
+    .imagem-inicio img,
+    .imagem-sobre img {
+        height: 300px;
+    }
+
+    .servicos {
+        padding: 50px 25px;
+    }
+
+    .lista-servicos {
+        flex-direction: column;
+    }
+
+    .card-servico {
+        width: 100%;
+    }
+
+    .contato {
+        padding: 60px 25px;
+    }
+}
